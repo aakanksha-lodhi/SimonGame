@@ -1,0 +1,89 @@
+:root {
+    --background-clr: #011f3f;
+    --title-clr: #fef2bf;
+    --title-clr2: #ff4a4a;
+  }
+  
+  body {
+    text-align: center;
+    background-color: var(--background-clr);
+  }
+  
+  #level-title {
+    font-family: "Press Start 2P", cursive;
+    font-size: calc(2vw + 1rem);
+    line-height: 1.5;
+    margin: 5%;
+    color: var(--title-clr);
+  }
+  
+  /* BUTTONS */
+  
+  .container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    margin: auto;
+  }
+  
+  .btn {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    margin: 25px;
+    display: inline-block;
+    height: calc(8vw + 5rem);
+    width: calc(8vw + 5rem);
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  
+  .unclickable-btn {
+    pointer-events: none;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .pressed {
+    -webkit-box-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 500px) {
+    .btn {
+      border: 5px solid black;
+      margin: 15px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .btn {
+      width: calc(0.5vw + 5rem);
+      height: calc(0.5vw + 5rem);
+      border: 5px solid black;
+      margin: 10px;
+    }
+  }
